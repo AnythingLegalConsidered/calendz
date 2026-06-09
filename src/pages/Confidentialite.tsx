@@ -75,12 +75,12 @@ export default function Confidentialite() {
           <section>
             <h2 className="text-lg font-bold text-deep">4. Destinataires et sous-traitants</h2>
             <p className="mt-2">
-              Tes données sont hébergées chez <strong className="text-deep">Supabase</strong>{" "}
-              (base de données et authentification) et le site est déployé sur{" "}
-              <strong className="text-deep">Vercel</strong>. Certains de ces prestataires
-              peuvent être situés hors de l'Union européenne ; ces transferts sont alors
-              encadrés par des clauses contractuelles types. Tes données ne sont jamais
-              revendues ni cédées à des tiers à des fins commerciales.
+              Tes données sont hébergées par <strong className="text-deep">Supabase</strong>{" "}
+              (base de données et authentification) dans l'Union européenne (Irlande). Le
+              site est déployé sur <strong className="text-deep">Vercel</strong> (États-Unis)
+              et charge des polices via Google ; ces prestataires impliquent des transferts
+              hors de l'Union européenne, encadrés par des clauses contractuelles types. Tes
+              données ne sont jamais revendues ni cédées à des tiers à des fins commerciales.
             </p>
           </section>
 
