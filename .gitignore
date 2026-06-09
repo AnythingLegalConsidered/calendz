@@ -1,0 +1,33 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build
+dist/
+dist-ssr/
+*.local
+*.tsbuildinfo
+
+# Env (ne JAMAIS committer les clés Supabase)
+.env
+.env.local
+.env.*.local
+
+# Doc business confidentiel (exclu volontairement)
+strategie_business.md
+
+# Outils QR (tooling local, hors app)
+qr-assets/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Editor / OS
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db

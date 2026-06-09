@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white font-sans text-anthracite antialiased;
+  }
+
+  /* Focus visible accessible au clavier */
+  :focus-visible {
+    @apply outline-none ring-2 ring-sky ring-offset-2 ring-offset-white;
+  }
+}
+
+@layer components {
+  .container-content {
+    @apply mx-auto w-full max-w-content px-5 sm:px-6 lg:px-8;
+  }
+
+  /* Texte navy sur corail = contraste AA (~5.5:1), pas de blanc sur corail */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-xl bg-coral px-6 py-3.5 text-base font-bold text-deep shadow-soft transition hover:brightness-105 active:brightness-95 disabled:cursor-not-allowed disabled:opacity-60;
+  }
+
+  .link-secondary {
+    @apply inline-flex items-center gap-1.5 font-semibold text-deep underline-offset-4 transition hover:text-sky hover:underline;
+  }
+
+  .eyebrow {
+    @apply text-sm font-bold uppercase tracking-wider text-sky;
+  }
+
+  .section-title {
+    @apply text-3xl font-extrabold tracking-tight text-deep sm:text-4xl;
+  }
+
+  .card {
+    @apply rounded-xl border border-cloud bg-white p-6 shadow-card;
+  }
+}
