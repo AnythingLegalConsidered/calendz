@@ -250,6 +250,15 @@ export default function Dashboard() {
                 Charger une semaine d'exemple
               </button>
             </div>
+          ) : visibleEvents.length === 0 ? (
+            <div className="flex flex-col items-center justify-center rounded-xl border border-dashed border-cloud bg-white py-16 text-center">
+              <p className="text-base font-semibold text-deep">
+                Aucun événement pour les sources sélectionnées.
+              </p>
+              <p className="mt-1 text-sm text-slate">
+                Réactive un filtre pour revoir tes événements.
+              </p>
+            </div>
           ) : (
             <WeekView
               weekStart={weekStart}

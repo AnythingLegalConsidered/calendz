@@ -20,6 +20,9 @@ strategie_business.md
 # Outils QR (tooling local, hors app)
 qr-assets/
 
+# Reviews multi-LLM (artefacts de tooling local, hors app)
+reviews/
+
 # Logs
 npm-debug.log*
 yarn-debug.log*
