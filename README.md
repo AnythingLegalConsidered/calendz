@@ -33,6 +33,7 @@ npm run dev                     # http://localhost:5173
 ```
 
 Configuration Supabase (table, RLS, auth) et déploiement : voir **[DEPLOYMENT.md](DEPLOYMENT.md)**.
+Workflow Git, branches et environnements (dev / main) : voir **[CONTRIBUTING.md](CONTRIBUTING.md)**.
 
 ## Routes
 

@@ -52,6 +52,21 @@ VITE_SUPABASE_ANON_KEY=eyJhbGciOi...
 > Le routing SPA (`/login`, `/app`) est géré par `vercel.json` (Vercel) et
 > `public/_redirects` (Netlify) — déjà inclus.
 
+### Branches & environnements
+
+| Branche | Environnement | URL                                          |
+| ------- | ------------- | -------------------------------------------- |
+| `main`  | Production    | domaine de prod (suit `main`)                |
+| `dev`   | Staging       | `calendz-git-dev-<scope>.vercel.app` (stable)|
+| PR      | Preview       | URL jetable, une par PR                      |
+
+`main` = prod, `dev` = staging permanent. Vercel déploie automatiquement chaque
+branche poussée — aucune config à ajouter. Le cycle de travail (dev → main, règles)
+est décrit dans **[CONTRIBUTING.md](CONTRIBUTING.md)**.
+
+> ⚠️ Base Supabase **partagée** entre `dev` et `main` : pas de migration destructive,
+> et les données de test polluent la vraie base.
+
 ### Vercel
 1. Pousse le repo sur GitHub.
 2. [vercel.com](https://vercel.com) → *Add New Project* → importe le repo (preset **Vite**).

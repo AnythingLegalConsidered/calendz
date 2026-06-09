@@ -1,0 +1,22 @@
+name: CI
+
+# Build gate: verify the project compiles (types + bundle) before any change
+# reaches production (main). Also runs on dev to catch breakage early on staging.
+# Supabase secrets are NOT needed here: this checks compilation, not runtime.
+on:
+  push:
+    branches: [dev]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+      - run: npm ci
+      - run: npm run build # tsc --noEmit && vite build
