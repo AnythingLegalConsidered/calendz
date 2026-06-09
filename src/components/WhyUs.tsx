@@ -9,7 +9,7 @@ const values = [
   {
     icon: ShieldCheck,
     title: "Tes données t'appartiennent",
-    text: "Conforme RGPD, tes données ne sont jamais revendues.",
+    text: "Données hébergées dans l'UE, conforme RGPD, jamais revendues.",
   },
   {
     icon: Ban,
