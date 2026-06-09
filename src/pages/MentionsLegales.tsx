@@ -46,8 +46,8 @@ export default function MentionsLegales() {
           <section>
             <h2 className="text-lg font-bold text-deep">Hébergement</h2>
             <p className="mt-2">
-              Le site est hébergé par Vercel Inc., 340 S Lemon Avenue #4133, Walnut,
-              CA 91789, États-Unis. Les données applicatives (base de données et
+              Le site est hébergé par Vercel Inc., 440 N Barranca Avenue #4133, Covina,
+              CA 91723, États-Unis. Les données applicatives (base de données et
               authentification) sont gérées par Supabase.
             </p>
           </section>
