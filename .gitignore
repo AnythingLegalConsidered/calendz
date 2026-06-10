@@ -40,3 +40,6 @@ Thumbs.db
 
 # Spike OAuth (graine Phase 2 — code jetable + secrets)
 spike/
+
+# Consigne école EPSI (document interne — local only)
+consigne/
